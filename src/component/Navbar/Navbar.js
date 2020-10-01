@@ -7,13 +7,10 @@ export default function Navbar(){
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 0.15,
+    flexGrow: 0.05,
   },
-//   menuButton: {
-//     marginRight: theme.spacing(),
-//   },
   title: {
-    flexGrow: 0.15,
+    flexGrow: 0.05,
   },
 }));
   const classes = useStyles();
