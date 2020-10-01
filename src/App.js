@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './component/Navbar/Navbar'
+import Dashboard from './component/Dashboard/Dashboard'
 
 
 class App extends React.Component{
@@ -12,7 +13,7 @@ class App extends React.Component{
   }
   
   render(){
-  return (
+  return this.state.loggedIn ? <Dashboard /> :(
    <div className="App">
      <Navbar />
    </div>

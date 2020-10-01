@@ -1,11 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, IconButton, Typography, Button } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Typography } from '@material-ui/core'
 import MenuIcon  from '@material-ui/icons/Menu'
 
-export default function Navbar(){
+ const Navbar = () =>{
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 0.05,
   },
@@ -25,10 +25,10 @@ const useStyles = makeStyles((theme) => ({
           <Typography variant="h5" className={classes.title}>
             Nicole and Monica's Music App
           </Typography>
-          {/* <Button color="inherit">Login</Button> */}
         </Toolbar>
       </AppBar>
     </div>
   );
 }
 
+export default Navbar
