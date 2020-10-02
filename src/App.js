@@ -1,12 +1,24 @@
 import React from 'react';
 import './App.css';
+import Navbar from './component/Navbar/Navbar'
+import Dashboard from './component/Dashboard/Dashboard'
 
-function App() {
-  return (
-    <div className="App">
-   <h1>Oh snap it's music y'all</h1>
-    </div>
+
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+
+    }
+  }
+  
+  render(){
+  return this.state.loggedIn ? <Dashboard /> :(
+   <div className="App">
+     <Navbar />
+   </div>
   );
+  }
 }
 
 export default App;
