@@ -9,12 +9,12 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      loggedIn: false
+      loggedIn: true
     }
   }
   
   render(){
-  return this.state.loggedIn ? <Dashboard /> :(
+  return this.state.loggedIn ? <div> <Navbar /> <Dashboard /> </div> :(
    <div className="App">
      <Navbar />
       <LoginForm />
