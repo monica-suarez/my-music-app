@@ -14,7 +14,7 @@ class App extends React.Component{
   }
   
   render(){
-  return this.state.loggedIn ? <Dashboard /> :(
+  return this.state.loggedIn ? <div> <Navbar /> <Dashboard /> </div> :(
    <div className="App">
      <Navbar />
       <LoginForm />
