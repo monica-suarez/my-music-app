@@ -7,3 +7,12 @@
 .onlineMode{
     padding: 0px 15px 0px 15px;
 }
+.volumeText{
+    padding: 0px 15px 0px 15px;
+}
+.soundText{
+    padding: 0px 15px 0px 15px;
+}
+.soundQuality{
+    width: 100%;
+}
