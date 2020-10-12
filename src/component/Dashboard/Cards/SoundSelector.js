@@ -13,7 +13,6 @@ const SoundSelector = () =>{
         <Select
           value={volumeQuality}
           onChange={handleChange}
-        //   inputProps={{ 'aria-label': 'Without label' }}
         >
           <MenuItem value="normal">Normal</MenuItem>
           <MenuItem value="low">Low</MenuItem>
