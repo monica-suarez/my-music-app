@@ -16,3 +16,10 @@
 .soundQuality{
     width: 100%;
 }
+.greeting{
+    color: rgba(128, 128, 128, 0.815);
+    margin-left: 150px;
+}
+.system-notification{
+    margin-left: 150px;
+}
