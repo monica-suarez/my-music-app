@@ -1,0 +1,25 @@
+.mediaCard{
+    height: 200px;
+    width: 250px;
+    margin: 30px;
+    padding: 30px 10px 0px 10px;
+}
+.onlineMode{
+    padding: 0px 15px 0px 15px;
+}
+.volumeText{
+    padding: 0px 15px 0px 15px;
+}
+.soundText{
+    padding: 0px 15px 0px 15px;
+}
+.soundQuality{
+    width: 100%;
+}
+.greeting{
+    color: rgba(128, 128, 128, 0.815);
+    margin-left: 150px;
+}
+.system-notification{
+    margin-left: 150px;
+}

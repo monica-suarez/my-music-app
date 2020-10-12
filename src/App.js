@@ -9,15 +9,22 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      loggedIn: true
+      loggedIn: false
     }
+  }
+
+  handleClick=(e)=>{
+    e.preventDefault()
+    this.setState({
+      loggedIn: true
+    })
   }
   
   render(){
   return this.state.loggedIn ? <div> <Navbar /> <Dashboard /> </div> :(
    <div className="App">
      <Navbar />
-      <LoginForm />
+      <LoginForm onClick={this.handleClick} />
    </div>
   );
   }

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const LoginForm = () =>{
+const LoginForm = (props) =>{
   const classes = useStyles();
   const [values, setValues] = React.useState({
     amount: '',
@@ -68,7 +68,7 @@ const LoginForm = () =>{
         </FormControl>
       <br/>
       <br/>
-      <Button variant="contained" size="small" color="primary" className={classes.margin} disableElevation>Log In</Button>
+      <Button onClick={props.onClick} variant="contained" size="small" color="primary" className={classes.margin} disableElevation>Log In</Button>
       
     </form>
   );
