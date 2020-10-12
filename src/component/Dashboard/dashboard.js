@@ -10,7 +10,9 @@ import './Cards/cards.css'
         <Cards />
         <h2 className="system-notification">System Notifications:</h2>
         </div>
+     <Cards />
     )
-}
+    }
+
 
 export default Dashboard

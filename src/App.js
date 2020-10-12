@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './component/Navbar/Navbar'
-import Dashboard from './component/Dashboard/Dashboard'
+import Dashboard from './component/Dashboard/dashboard'
 import LoginForm from './component/Form/Form'
 
 
