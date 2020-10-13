@@ -4,7 +4,7 @@ import { Switch } from '@material-ui/core'
 const SwitchMode = (props) =>{
       const handleChange = () => {
           console.log(props.toggle)
-        props.handleToggle(!props.handleToggle)
+        props.handleToggle(!props.toggle)
       };
 
       return(

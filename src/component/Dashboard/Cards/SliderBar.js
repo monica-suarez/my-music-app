@@ -6,7 +6,7 @@ const SliderBar = () =>{
     const valuetext=(value)=>{
         return `${value}`;
       }
-      const [volumeControl, setVolumeControl] = useState();
+    //   const [volumeControl, setVolumeControl] = useState();
       const changeVolume = (e) => {
         e.preventDefault()
         setVolumeControl(e.target.value)
