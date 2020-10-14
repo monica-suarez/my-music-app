@@ -40,7 +40,7 @@ import SoundSelector from './SoundSelector'
                             Overrides all other sound settings in this application
                         </Typography>
                         <br/>
-                        <SliderBar volume={props.volume} handleVolume={props.handleVolume}/>
+                        <SliderBar volume={props.volume} setVolume={props.setVolume}/>
                     </Card>
                 </Box>
                 <Box>

@@ -16,9 +16,9 @@ import './Cards/cards.css'
             volume={volume} setVolume={setVolume} 
             volumeQuality={volumeQuality} setVolumeQuality={setVolumeQuality}/>
         <h2 className="system-notification">System Notifications:</h2>
-        <p>{toggle === false ? 'You are now offline' : ''}</p>
-        <p>{volume > 80? `Listening to music at a high volume could cause long-term hearing loss.` : ''}</p>
-        <p>{volumeQuality === 'low'? `Music quality is degraded. Increase quality if your connection allows it.` : " "}</p>
+        <p className="notification">{toggle === false ? 'You are now offline' : ''}</p>
+        <p className="notification">{volume > 80? `Listening to music at a high volume could cause long-term hearing loss.` : ''}</p>
+        <p className="notification">{volumeQuality === 'low'? `Music quality is degraded. Increase quality if your connection allows it.` : " "}</p>
         </div>
     )
     }
