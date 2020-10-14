@@ -1,15 +1,14 @@
-import React, { useState }  from 'react'
+import React from 'react'
 import { Slider } from '@material-ui/core'
 
 
-const SliderBar = () =>{
+const SliderBar = (props) =>{
     const valuetext=(value)=>{
         return `${value}`;
       }
-    //   const [volumeControl, setVolumeControl] = useState();
-      const changeVolume = (e) => {
-        e.preventDefault()
-        setVolumeControl(e.target.value)
+      const handleChange = () => {
+        //   console.log(props.volume)
+        // props.handleVolume(props.volume)
 }
     return(    
         <Slider
@@ -21,8 +20,8 @@ const SliderBar = () =>{
             marks
             min={0}
             max={100}
-            onChange={changeVolume}
-            volumecontrol={volumeControl}
+            onChange={handleChange}
+            
         />
     )
 }

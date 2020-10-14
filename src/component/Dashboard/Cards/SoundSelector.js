@@ -2,16 +2,14 @@ import React from 'react'
 import { Select, FormControl, MenuItem } from '@material-ui/core'
 import './cards.css'
 
-const SoundSelector = () =>{
-    const [volumeQuality, setVolumeQuality] = React.useState('normal');
-
-    const handleChange = (e) => {
-      setVolumeQuality(e.target.value);
+const SoundSelector = (props) =>{
+ const handleChange = (e) => {
+      props.setVolumeQuality(e.target.value);
     };
     return(
         <FormControl className="soundQuality">
             <Select
-                value={volumeQuality}
+                value={props.volumeQuality}
                 onChange={handleChange}
                 >
                 <MenuItem value="normal">Normal</MenuItem>
