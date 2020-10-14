@@ -3,16 +3,16 @@ import { Slider } from '@material-ui/core'
 
 
 const SliderBar = (props) =>{
-    const valuetext=(value)=>{
-        return `${value}`;
+    const valuetext=()=>{
+        return `${props.volume}`;
       }
-      const handleChange = () => {
-        //   console.log(props.volume)
-        // props.handleVolume(props.volume)
+      const handleChange = (e, newVolume) => {
+        e.preventDefault()
+        props.setVolume(newVolume)
 }
     return(    
         <Slider
-            defaultValue={20}
+            defaultValue={props.volume}
             getAriaValueText={valuetext}
             aria-labelledby="discrete-slider"
             valueLabelDisplay="auto"
@@ -21,7 +21,7 @@ const SliderBar = (props) =>{
             min={0}
             max={100}
             onChange={handleChange}
-            
+            setVolume={props.setVolume}
         />
     )
 }
