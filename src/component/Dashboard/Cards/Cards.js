@@ -1,12 +1,15 @@
 import React from 'react';
 // import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { Card, CardContent, CardActions, Typography, Box }from '@material-ui/core';
+import { Card, Typography, Box }from '@material-ui/core';
 // import CardMedia from '@material-ui/core/CardMedia';
 // import IconButton from '@material-ui/core/IconButton';
 import './cards.css'
 import SliderBar from './SliderBar'
 import SwitchMode from './SwitchMode'
 import SoundSelector from './SoundSelector'
+
+
+
 
    const Cards = () =>{
         return(

@@ -3,8 +3,8 @@ import { Switch } from '@material-ui/core'
 
 const SwitchMode = () =>{
     const [state, setState] = React.useState({
-        checkedA: true,
-        checkedB: true,
+        checkedA: true
+        // checkedB: false,
       });
     
       const handleChange = (event) => {
